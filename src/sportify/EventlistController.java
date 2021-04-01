@@ -182,6 +182,29 @@ public class EventlistController implements Initializable {
 
    
 
+<<<<<<< Updated upstream
+=======
+
+   @FXML
+    private void redirectevent(MouseEvent event) {
+    }
+    
+    @FXML
+    private void abonnementRedirect(MouseEvent event) {
+        Stage stage = new Stage();
+        Parent home;
+        try {
+            home = FXMLLoader.load(getClass().getResource("abonnementlist.fxml"));
+            Scene homescene = new Scene(home);
+            Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            app_stage.setScene(homescene);
+            app_stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(EventlistController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+>>>>>>> Stashed changes
     @FXML
     private void promoRedirect(ActionEvent event) {
         Stage stage = new Stage();
@@ -209,6 +232,20 @@ public class EventlistController implements Initializable {
             app_stage.show();
         } catch (IOException ex) {
             Logger.getLogger(EventlistController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+    private void coursRedirect(MouseEvent event) {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("tableView.fxml"));
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(TableViewController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     }

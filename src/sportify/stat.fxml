@@ -8,7 +8,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<<<<<<< Updated upstream
 <AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sportify.StatController">
+=======
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sportify.StatController">
+>>>>>>> Stashed changes
    <children>
       <AnchorPane layoutX="226.0" prefHeight="90.0" prefWidth="628.0" style="-fx-background-color: #dedede;">
          <children>
@@ -29,6 +33,7 @@
       </BarChart>
       <AnchorPane layoutX="30.0" layoutY="30.0" prefHeight="513.0" prefWidth="200.0">
          <children>
+<<<<<<< Updated upstream
             <Button layoutX="-31.0" layoutY="-30.0" mnemonicParsing="false" onAction="#eventRedirect" prefHeight="274.0" prefWidth="228.0" style="-fx-background-color: #42bcf5;" text="Event" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="36.0" />
@@ -39,6 +44,131 @@
                   <Font name="System Bold" size="36.0" />
                </font>
             </Button>
+=======
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="514.0" prefWidth="178.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#eventRedirect" prefHeight="69.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="47.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/76931541_862746537475073_1999362329178800128_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="59.0" text="Event" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="45.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/96377513_228237518628394_4383626454760423424_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="99.0" text="Nutrisoniste" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/50072491_334200950519923_2615387173456707584_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="62.0" text="Cours" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#promoRedirect" prefHeight="74.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/84797561_500217524247080_4463394902369107968_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="98.0" text="Promotion" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/166832743_186134159798239_5627999576669343347_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="63.0" text="Coach" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/167107939_158007286100610_5851228863325943918_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="111.0" text="Abonnement" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="178.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/167432623_443912563604031_3569154307758774092_n.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="62.0" text="Users " textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+>>>>>>> Stashed changes
          </children>
       </AnchorPane>
    </children>

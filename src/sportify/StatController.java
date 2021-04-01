@@ -34,6 +34,14 @@ public class StatController implements Initializable {
     final static String s2 = "Saison 2";
     final static String s3 = "Saison 3";
     final static String s4 = "Saison 4";
+    final static String s5 = "Saison 5";
+    final static String s6 = "Saison 6";
+    final static String s7 = "Saison 7";
+    final static String s8 = "Saison 8";
+    final static String s9 = "Saison 9";
+    final static String s10 = "Saison 10";
+    final static String s11 = "Saison 11";
+    final static String s12 = "Saison 12";
     
     @FXML
     private BarChart<?, ?> chart;
@@ -41,6 +49,7 @@ public class StatController implements Initializable {
 
     /**
      * Initializes the controller class.
+     * @param url
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -58,6 +67,14 @@ public class StatController implements Initializable {
         series1.getData().add(new XYChart.Data(s2, statList.get(1)));
         series1.getData().add(new XYChart.Data(s3, statList.get(2)));
         series1.getData().add(new XYChart.Data(s4, statList.get(3)));
+        series1.getData().add(new XYChart.Data(s5, statList.get(4)));
+        series1.getData().add(new XYChart.Data(s6, statList.get(5)));
+        series1.getData().add(new XYChart.Data(s7, statList.get(6)));
+        series1.getData().add(new XYChart.Data(s8, statList.get(7)));
+        series1.getData().add(new XYChart.Data(s9, statList.get(8)));
+        series1.getData().add(new XYChart.Data(s10, statList.get(9)));
+        series1.getData().add(new XYChart.Data(s11, statList.get(10)));
+        series1.getData().add(new XYChart.Data(s12, statList.get(11)));
         
 //        
 //        series1.getData().add(new XYChart.Data(s1, 4));

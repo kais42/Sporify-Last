@@ -141,14 +141,31 @@ public class EventDAO {
     }
     
     public ArrayList getStat(){
-        String q1 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-01-01' and date_debut<= '2021-03-31'";
-        String q2 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-04-01' and date_debut<= '2021-06-30'";
-        String q3 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-07-01' and date_debut<= '2021-09-31'";
-        String q4 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-10-01' and date_debut<= '2021-12-31'";
+        
+        String q1 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-01-01' and date_debut<= '2021-01-31'";
+        String q2 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-02-01' and date_debut<= '2021-02-28'";
+        String q3 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-03-01' and date_debut<= '2021-03-31'";
+        String q4 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-4-01' and date_debut<= '2021-4-30'";
+        String q5 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-5-01' and date_debut<= '2021-5-31'";
+        String q6 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-6-01' and date_debut<= '2021-6-30'";
+        String q7 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-7-01' and date_debut<= '2021-7-31'";
+        String q8 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-8-01' and date_debut<= '2021-8-31'";
+        String q9 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-9-01' and date_debut<= '2021-9-30'";
+        String q10 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-10-01' and date_debut<= '2021-10-31'";
+        String q11 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-11-01' and date_debut<= '2021-11-31'";
+        String q12 = "SELECT count(*) as d FROM evenement WHERE date_debut>='2021-12-01' and date_debut<= '2021-12-31'";
         PreparedStatement preparedStmt1;
         PreparedStatement preparedStmt2;
         PreparedStatement preparedStmt3;
         PreparedStatement preparedStmt4;
+        PreparedStatement preparedStmt5;
+        PreparedStatement preparedStmt6;
+        PreparedStatement preparedStmt7;
+        PreparedStatement preparedStmt8;
+        PreparedStatement preparedStmt9;
+        PreparedStatement preparedStmt10;
+        PreparedStatement preparedStmt11;
+        PreparedStatement preparedStmt12;
         ArrayList data = new ArrayList();
         try{
             preparedStmt1 = connection.prepareStatement(q1);
@@ -173,6 +190,54 @@ public class EventDAO {
             ResultSet rs4 = preparedStmt4.executeQuery();
             while ( rs4.next() ){
             data.add(rs4.getInt("d"));
+            }
+            
+            preparedStmt5 = connection.prepareStatement(q5);
+            ResultSet rs5 = preparedStmt5.executeQuery();
+            while ( rs5.next() ){
+            data.add(rs5.getInt("d"));
+            }
+            
+            preparedStmt6 = connection.prepareStatement(q6);
+            ResultSet rs6 = preparedStmt6.executeQuery();
+            while ( rs6.next() ){
+            data.add(rs6.getInt("d"));
+            }
+            
+            preparedStmt7 = connection.prepareStatement(q7);
+            ResultSet rs7 = preparedStmt7.executeQuery();
+            while ( rs7.next() ){
+            data.add(rs7.getInt("d"));
+            }
+            
+            preparedStmt8 = connection.prepareStatement(q8);
+            ResultSet rs8 = preparedStmt8.executeQuery();
+            while ( rs8.next() ){
+            data.add(rs8.getInt("d"));
+            }
+            
+            preparedStmt9 = connection.prepareStatement(q9);
+            ResultSet rs9 = preparedStmt9.executeQuery();
+            while ( rs9.next() ){
+            data.add(rs9.getInt("d"));
+            }
+            
+            preparedStmt10 = connection.prepareStatement(q10);
+            ResultSet rs10 = preparedStmt10.executeQuery();
+            while ( rs10.next() ){
+            data.add(rs10.getInt("d"));
+            }
+            
+            preparedStmt11 = connection.prepareStatement(q11);
+            ResultSet rs11 = preparedStmt11.executeQuery();
+            while ( rs11.next() ){
+            data.add(rs11.getInt("d"));
+            }
+            
+            preparedStmt12 = connection.prepareStatement(q12);
+            ResultSet rs12 = preparedStmt12.executeQuery();
+            while ( rs12.next() ){
+            data.add(rs12.getInt("d"));
             }
             
         } catch (SQLException ex) {

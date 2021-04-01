@@ -7,7 +7,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<<<<<<< Updated upstream
 <AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sportify.ModifierpromoController">
+=======
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sportify.ModifierpromoController">
+>>>>>>> Stashed changes
    <children>
       <AnchorPane layoutX="196.0" prefHeight="87.0" prefWidth="558.0" style="-fx-background-color: #dedede;">
          <children>
@@ -27,6 +31,7 @@
       <Button fx:id="supp" layoutX="424.0" layoutY="496.0" mnemonicParsing="false" onAction="#suppRedirect" prefHeight="26.0" prefWidth="86.0" text="Supprimer" />
       <AnchorPane layoutY="14.0" prefHeight="513.0" prefWidth="200.0">
          <children>
+<<<<<<< Updated upstream
             <Button layoutX="-31.0" layoutY="-30.0" mnemonicParsing="false" onAction="#eventRedirect" prefHeight="274.0" prefWidth="228.0" style="-fx-background-color: #42bcf5;" text="Event" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="36.0" />
@@ -37,6 +42,135 @@
                   <Font name="System Bold" size="36.0" />
                </font>
             </Button>
+=======
+            <AnchorPane layoutX="-1.0" layoutY="-14.0" prefHeight="562.0" prefWidth="200.0" style="-fx-background-color: #65d2e6;">
+               <children>
+                  <VBox layoutX="14.0" layoutY="14.0" prefHeight="538.0" prefWidth="178.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" onMouseClicked="#eventRedirect" prefHeight="69.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="37.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/76931541_862746537475073_1999362329178800128_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="59.0" text="Event" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="44.0" fitWidth="45.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/96377513_228237518628394_4383626454760423424_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="99.0" text="Nutrisoniste" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/50072491_334200950519923_2615387173456707584_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="62.0" text="Cours" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" onMouseClicked="#promoRedirect" prefHeight="74.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/84797561_500217524247080_4463394902369107968_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="98.0" text="Promotion" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/166832743_186134159798239_5627999576669343347_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="63.0" text="Coach" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/167107939_158007286100610_5851228863325943918_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="111.0" text="Abonnement" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="178.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#redirectevent" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/167432623_443912563604031_3569154307758774092_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="62.0" text="Users " textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+>>>>>>> Stashed changes
          </children>
       </AnchorPane>
       <Text layoutX="212.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" wrappingWidth="47.7366943359375" />

@@ -102,9 +102,5 @@ public class Event {
     public String toString() {
         return "Event{" + "id=" + id + ", titre=" + titre + ", description=" + description + ", dateDebut=" + dateDebut + ", dateFin=" + dateFin + '}';
     }
-    
-    
-    
-    
-    
+
 }
